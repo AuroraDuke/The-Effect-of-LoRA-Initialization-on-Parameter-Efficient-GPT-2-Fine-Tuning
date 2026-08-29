@@ -1,0 +1,52 @@
+PS C:\Users\Victus\Desktop\Yüksek lisans\Ders\NLP\Final project\cs224n_gpt-main> (C:\Users\Victus\anaconda3\shell\condabin\conda-hook.ps1) ; (conda activate nlp)
+(nlp) PS C:\Users\Victus\Desktop\Yüksek lisans\Ders\NLP\Final project\cs224n_gpt-main> python .\paraphrase_detection.py --use_gpu
+cuda
+Loaded 283003 train examples from data/quora-train.csv
+Loaded 40429 train examples from data/quora-dev.csv
+Loading weights: 100%|███████████████████████████████████████████████████████████████████████████| 148/148 [00:00<00:00, 12333.74it/s]
+train-0: 100%|██████████████████████████████████████████████████████████████████████████████████| 35376/35376 [50:53<00:00, 11.59it/s]
+eval: 100%|███████████████████████████████████████████████████████████████████████████████████████| 5054/5054 [01:26<00:00, 58.16it/s]
+save the model to 10-1e-05-paraphrase.pt
+Epoch 0: train loss :: 0.361, dev acc :: 0.872
+train-1: 100%|██████████████████████████████████████████████████████████████████████████████████| 35376/35376 [50:52<00:00, 11.59it/s]
+eval: 100%|███████████████████████████████████████████████████████████████████████████████████████| 5054/5054 [01:26<00:00, 58.50it/s]
+save the model to 10-1e-05-paraphrase.pt
+Epoch 1: train loss :: 0.272, dev acc :: 0.883
+train-2: 100%|██████████████████████████████████████████████████████████████████████████████████| 35376/35376 [51:01<00:00, 11.56it/s]
+eval: 100%|███████████████████████████████████████████████████████████████████████████████████████| 5054/5054 [01:26<00:00, 58.36it/s]
+save the model to 10-1e-05-paraphrase.pt
+Epoch 2: train loss :: 0.223, dev acc :: 0.892
+train-3: 100%|██████████████████████████████████████████████████████████████████████████████████| 35376/35376 [50:56<00:00, 11.58it/s]
+eval: 100%|███████████████████████████████████████████████████████████████████████████████████████| 5054/5054 [01:26<00:00, 58.50it/s]
+save the model to 10-1e-05-paraphrase.pt
+Epoch 3: train loss :: 0.183, dev acc :: 0.897
+train-4: 100%|██████████████████████████████████████████████████████████████████████████████████| 35376/35376 [50:57<00:00, 11.57it/s]
+eval: 100%|███████████████████████████████████████████████████████████████████████████████████████| 5054/5054 [01:26<00:00, 58.48it/s]
+Epoch 4: train loss :: 0.147, dev acc :: 0.897
+train-5: 100%|██████████████████████████████████████████████████████████████████████████████████| 35376/35376 [50:53<00:00, 11.59it/s]
+eval: 100%|███████████████████████████████████████████████████████████████████████████████████████| 5054/5054 [01:26<00:00, 58.72it/s]
+save the model to 10-1e-05-paraphrase.pt
+Epoch 5: train loss :: 0.118, dev acc :: 0.898
+train-6: 100%|██████████████████████████████████████████████████████████████████████████████████| 35376/35376 [50:59<00:00, 11.56it/s]
+eval: 100%|███████████████████████████████████████████████████████████████████████████████████████| 5054/5054 [01:26<00:00, 58.76it/s]
+Epoch 6: train loss :: 0.096, dev acc :: 0.897
+train-7: 100%|██████████████████████████████████████████████████████████████████████████████████| 35376/35376 [50:57<00:00, 11.57it/s]
+eval: 100%|███████████████████████████████████████████████████████████████████████████████████████| 5054/5054 [01:26<00:00, 58.53it/s]
+Epoch 7: train loss :: 0.079, dev acc :: 0.895
+train-8: 100%|██████████████████████████████████████████████████████████████████████████████████| 35376/35376 [51:01<00:00, 11.55it/s]
+eval: 100%|███████████████████████████████████████████████████████████████████████████████████████| 5054/5054 [01:26<00:00, 58.33it/s]
+Epoch 8: train loss :: 0.066, dev acc :: 0.893
+train-9: 100%|██████████████████████████████████████████████████████████████████████████████████| 35376/35376 [50:58<00:00, 11.57it/s]
+eval: 100%|███████████████████████████████████████████████████████████████████████████████████████| 5054/5054 [01:26<00:00, 58.36it/s]
+Epoch 9: train loss :: 0.055, dev acc :: 0.896
+C:\Users\Victus\Desktop\Yüksek lisans\Ders\NLP\Final project\cs224n_gpt-main\paraphrase_detection.py:156: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  saved = torch.load(args.filepath)
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████████| 148/148 [00:00<00:00, 6866.93it/s]
+Loaded model to test from 10-1e-05-paraphrase.pt
+Loaded 40429 train examples from data/quora-dev.csv
+Loaded 80858 test examples from data/quora-test-student.csv
+eval: 100%|███████████████████████████████████████████████████████████████████████████████████████| 5054/5054 [01:26<00:00, 58.20it/s]
+dev paraphrase acc :: 0.898
+eval: 100%|█████████████████████████████████████████████████████████████████████████████████████| 10108/10108 [02:50<00:00, 59.28it/s]
+(nlp) PS C:\Users\Victus\Desktop\Yüksek lisans\Ders\NLP\Final project\cs224n_gpt-main> 
+ *  History restored 
